@@ -11,7 +11,7 @@ function App() {
   const [listOfInventario, setListOfInventario] = useState([]);
 
   const addInventario = () => {
-    Axios.post("http://localhost:19283/addinventario", {
+    Axios.post("https://mern-sta.herokuapp.com/addinventario", {
       name: name,
       amount: amount,
       description: description,
@@ -28,7 +28,7 @@ function App() {
   const updateInventario = (id) => {
     const newAmount = prompt("Introduce la cantidad actual: ");
 
-    Axios.put("http://localhost:19283/update", {
+    Axios.put("https://mern-sta.herokuapp.com/update", {
       newAmount: newAmount,
       id: id
     })
@@ -43,7 +43,7 @@ function App() {
   };
 
   const deleteInventario = (id) => {
-    Axios.delete(`http://localhost:19283/delete/${id}`).then(() => {
+    Axios.delete(`https://mern-sta.herokuapp.com/delete/${id}`).then(() => {
       setListOfInventario(
         listOfInventario.filter((val) => {
           return val._id != id;
@@ -53,7 +53,7 @@ function App() {
   };
 
   useEffect(() => {
-    Axios.get("http://localhost:19283/read")
+    Axios.get("https://mern-sta.herokuapp.com/read")
       .then((response) => {
         setListOfInventario(response.data);
       })
