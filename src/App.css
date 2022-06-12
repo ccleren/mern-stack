@@ -1,0 +1,87 @@
+.App {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.inputs {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: plum;
+  box-shadow: 2px 2px 5px black;
+}
+
+.inputs input {
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  margin: 10px;
+  padding-left: 10px;
+}
+
+.inputs button {
+  border: none;
+  width: 150px;
+  height: 50px;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.tabla {
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center;
+  width: 30%;
+  height: 50%;
+}
+
+.listOfInventario {
+  background-color: blueviolet;
+  color: plum;
+  text-align: center;
+  font-size: 19px;
+  border-spacing: 1px;
+  margin-top: 10px;
+  width: 120%;
+  height: 70%;
+  font-family: Arial;
+}
+
+.inventario {
+  border-collapse: collapse;
+  color: white;
+}
+
+.inventario button {
+  font-size: 17px;
+  font-family: Arial;
+}
+
+.Update {
+  background-color: green;
+  border: 0.5px;
+  color: white;
+}
+
+.Erase {
+  background-color: red;
+  border: 0.5px;
+  color: white;
+}
